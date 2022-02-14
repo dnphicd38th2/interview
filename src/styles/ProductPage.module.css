@@ -1,0 +1,152 @@
+.container {
+}
+.wrapper {
+  display: flex;
+  margin: 40px;
+}
+
+.imgContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  height: 70vh;
+  object-fit: contain;
+}
+.infoContainer {
+  flex: 1;
+  padding: 20px;
+}
+.titleContainer {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.descContainer {
+  font-size: 20px;
+  font-weight: 600;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.priceContainer {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.filterContainer {
+  width: 50%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filterTitle {
+  font-size: 25px;
+}
+.filterColor {
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.filterSelect {
+  padding: 5px;
+  margin-left: 10px;
+}
+.filterOption {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.addContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amountContainer {
+  display: flex;
+  align-items: center;
+}
+.amount {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 600;
+
+  border-radius: 5px;
+  border: 1px solid teal;
+
+  margin: 0px 5px;
+}
+
+.buttonAdd {
+  padding: 15px;
+  border: 2px solid teal;
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.buttonAdd:hover {
+  background-color: #f8f4f4;
+}
+
+@media only screen and (max-width: 380px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 5px;
+
+    padding: 10px;
+  }
+  .image {
+    height: 40vh;
+  }
+  .infoContainer {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+  .imgContainer {
+    flex: none;
+  }
+  .filterContainer {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .priceContainer {
+    margin-bottom: 10px;
+  }
+  .descContainer {
+    margin-bottom: 10px;
+  }
+  .addContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .amountContainer {
+    margin-bottom: 20px;
+  }
+  .buttonAdd {
+    padding: 10px;
+  }
+}

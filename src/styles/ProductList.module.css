@@ -1,0 +1,48 @@
+.container {
+}
+
+.title {
+  font-family: serif;
+  margin: 20px;
+}
+
+.filterContainer {
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  font-family: serif;
+  display: flex;
+}
+
+.filterText {
+  margin-right: 10px;
+}
+
+.filterSelect {
+  margin-right: 20px;
+  padding: 10px;
+  font-family: serif;
+}
+
+.filterOption {
+  font-family: serif;
+}
+@media only screen and (max-width: 380px) {
+  .filter {
+    flex-direction: column;
+  }
+  .filterSelect {
+    padding: 5px;
+    margin-right: 0;
+  }
+  .filterText {
+    margin-right: 0;
+  }
+  .filterSelect {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,166 @@
+.container {
+}
+.wrapper {
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  padding: 5px;
+  margin: 0 20px;
+
+  font-family: serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.topTexts {
+  font-family: serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.topText {
+  margin: 0 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  width: 100%;
+}
+.left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+.productDetail {
+  flex: 2;
+  display: flex;
+}
+
+.image {
+  width: 200px;
+}
+.detail {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.productName {
+  font-weight: 600;
+}
+.productId {
+  font-weight: 600;
+}
+.productColor {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.productSize {
+  font-weight: 600;
+}
+.priceDetail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.priceAmount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+}
+.productAmount {
+  font-size: 20px;
+  font-weight: 600;
+}
+.productPrice {
+  font-weight: 600;
+  font-size: 20px;
+}
+.hr {
+  background-color: #eee;
+  border: none;
+  height: 1px;
+}
+.right {
+  flex: 1;
+
+  margin-top: 20px;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.rightTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rightItem {
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.rightBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media only screen and (max-width: 380px) {
+  .wrapper {
+    padding: 10px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .topTexts {
+    display: none;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .left {
+    flex: none;
+  }
+  .products {
+    flex-direction: column;
+  }
+  .priceAmount {
+    margin-bottom: 10px;
+  }
+  .productAmount {
+    margin: 5px 15px;
+  }
+  .productPrice {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+}

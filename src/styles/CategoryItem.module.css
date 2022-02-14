@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex: 1;
+  margin: 3px;
+  height: 70vh;
+  position: relative;
+}
+.container:hover .button {
+  opacity: 0.8;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  color: white;
+  margin-bottom: 20px;
+}
+.button {
+  background-color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  color: gray;
+  border: none;
+  padding: 10px;
+}
+@media only screen and (max-width: 380px) {
+  .image {
+    height: 30vh;
+  }
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .button {
+    font-size: 10px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,57 @@
+.container {
+  height: 70vh;
+  background-color: #fcf5f5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.desc {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.inputContainer {
+  width: 50%;
+  height: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input {
+  flex: 8;
+
+  height: 100%;
+
+  border: none;
+  outline: none;
+}
+.button {
+  height: 100%;
+  flex: 1;
+
+  color: white;
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 380px) {
+  .desc {
+    text-align: center;
+  }
+  .inputContainer {
+    height: 30px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

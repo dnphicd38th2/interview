@@ -1,0 +1,73 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  width: 25%;
+  background-color: white;
+  padding: 20px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  min-width: 40%;
+  margin: 20px 10px 0px 0px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.agreement {
+  font-size: 12px;
+  margin: 20px 0px;
+  font-family: serif;
+}
+.button {
+  width: 40%;
+  background-color: teal;
+  padding: 10px;
+  margin: 20px 0px;
+
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  margin: 5px 0px;
+
+  font-size: 12px;
+  text-decoration: underline;
+  font-family: serif;
+  color: coral;
+
+  cursor: pointer;
+}
+@media only screen and (max-width: 380px) {
+  .wrapper {
+    width: 75%;
+    background-color: rgba(236, 232, 232, 0.411);
+  }
+}
